@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'YasFont';
-    src: local('YasFont'), url('/FontsFree-Net-sparose1.ttf') format('truetype');
+    src: local('YasFont'), url('FontsFree-Net-sparose1.ttf') format('truetype');
 }
 
 
