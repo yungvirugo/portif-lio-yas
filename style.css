@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&25family=Roboto+Condensed&display=swap');
+
+/* Font Yas */
+
+@font-face {
+    font-family: 'YasFont';
+    src: local('YasFont'), url('/FontsFree-Net-sparose1.ttf') format('truetype');
+}
+
+
+
+
+body,
+p {
+    margin: 0;
+}
+
+/* banner */
+
+.banner {
+    width: 100%;
+    height: 25.5rem;
+
+    background-image: url(/images/magun3.png);
+    background-repeat: no-repeat;
+    background-position: top 45.5% right 70%;
+    background-size: 140%;
+    filter: contrast(110%) saturate(70%) brightness(90%);
+    background-color: rgba(4, 121, 246, 0.765);
+    /* Roxo */
+    background-blend-mode: hard-light;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+
+    image-rendering: crisp-edges;
+}
+
+.branco {
+    width: 15%;
+    height: 55%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+
+    background-color: white;
+}
+
+.quadrado {
+    width: auto;
+    height: 90%;
+
+    z-index: 3;
+    
+
+    position: absolute;
+}
+
+.yas-title {
+    width: auto;
+    height: 90%;
+    z-index: 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'YasFont';
+    font-size: 3.1rem;
+    color: #5F16EB;
+
+    left: 2rem;
+
+    position: absolute;
+
+    z-index: 2;
+}
+
+
+/* Menu */
+
+header {
+    width: 100%;
+    height: 5rem;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #7C0CE8;
+}
+
+.menu-but {
+    width: auto;
+    height: 3rem;
+    z-index: 2;
+
+    font-family: 'Oswald';
+    font-size: 1.5rem;
+    color: white;
+
+    position: relative;
+
+    margin: auto 1rem;
+
+    border: none;
+    transition: 0.2s ease;
+
+    background-color: transparent;
+}
+
+.menu-but:hover {
+    text-shadow: 0 0 0.4rem #FEFEFF;
+    transform: translateY(-0.1rem);
+}
+
+.menu-but::after {
+    content: '';
+
+    width: 0%;
+    height: 0.2rem;
+
+    left: 0rem;
+    bottom: 0rem;
+
+    position: absolute;
+
+    transition: 0.2s ease;
+
+    background-color: white;
+}
+
+.menu-but:hover::after {
+    width: 100%;
+    box-shadow: 0 0 0.5rem #FEFEFF;
+}
+
+/* Container */
+
+.container-color {
+    width: 100%;
+    height: auto;
+
+    background-image: linear-gradient(to bottom, #d7b0ff 3%, #f9f3ff 13%);
+    /*background-color: #d7b0ff;*/
+
+}
+
+/* modelos de arte */
+
+.centralizar {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes{
+    width: 4rem;
+    height: 4rem;
+
+    margin: auto 1rem;
+    margin-top: 1.5rem;
+
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    transition: all 0.2s ease;
+}
+
+.redes:hover{
+    transform: translateY(-0.3rem);
+    background-color: rgba(255, 255, 255, 0.703);
+}
+
+.redes img{
+    width: 80%;
+}
+
+.art-model {
+    width: 25.5%;
+    height: 30rem;
+
+    margin: auto 1rem;
+    margin-top: 1%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5rem;
+
+    background-color: white;
+}
+
+.art-model img {
+    width: 92%;
+
+}
+
+/* sobre */
+
+.container-about {
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.about-retails {
+    width: 50%;
+    height: 100%;
+
+}
+
+.title-yas {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'YasFont';
+    font-size: 6.5rem;
+    color: #460080;
+
+    text-shadow: 0.5rem 0 0 #FEFEFF;
+}
+
+.yas-molde {
+    width: 100%;
+    height: 25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin-top: 3rem;
+}
+
+.yas-sobre {
+    width: 100%;
+    height: 39rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    margin-top: 3rem;
+}
+
+.fundo {
+    width: 80%;
+
+    position: relative;
+    z-index: 1;
+    fill: blue;
+}
+
+.yas {
+    width: auto;
+    height: 74%;
+    position: absolute;
+    z-index: 3;
+    border-radius: 4rem;
+}
+
+.brilho {
+    width: auto;
+    height: 45%;
+    position: absolute;
+    z-index: 4;
+    left: 3rem;
+    top: -2rem;
+}
+
+.coisa-roxa {
+    width: auto;
+    height: 82%;
+    position: absolute;
+    z-index: 2;
+    right: 0.2rem;
+    top: -0.5rem;
+    transform: rotate(-72deg);
+}
+
+.brilho2 {
+    width: auto;
+    height: 30%;
+    position: absolute;
+    z-index: 4;
+    right: 3.9rem;
+    bottom: 9rem;
+
+}
+
+.coisa-roxa2 {
+    width: auto;
+    height: 72%;
+    position: absolute;
+    z-index: 2;
+    left: 2.4rem;
+    bottom: -2.5rem;
+    transform: rotate(162deg);
+}
+
+.borrin {
+    width: auto;
+    height: 72%;
+    position: absolute;
+
+    z-index: 1;
+
+    transform: rotate(-90deg);
+}
+
+.text-yas {
+    width: 60%;
+    height: 90%;
+
+    font-family: 'Oswald';
+    font-size: 2rem;
+    color: #6A4BAD;
+
+    text-align: center;
+
+    margin-top: 1rem;
+    z-index: 2;
+
+}
+
+/* titulo de artes */
+
+.titulo-arte {
+    width: 100%;
+    height: 10rem;
+
+    margin-top: 10rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.borraoroxo {
+    width: auto;
+    height: 100%;
+
+    z-index: 1;
+    position: absolute;
+}
+
+.titulo-artes {
+    font-family: 'YasFont';
+    font-size: 7.5rem;
+    color: #32088C;
+
+    text-shadow: 0.5rem 0 0 #FEFEFF;
+
+    z-index: 2;
+    position: absolute;
+}
+
+.brilhoroxo {
+    width: auto;
+    height: 140%;
+
+    right: 17.5%;
+    rotate: 190deg;
+
+    z-index: 0;
+    position: absolute;
+}
+
+.galhoroxo{
+    width: auto;
+    height: 140%;
+
+    left: 18.5%;
+    rotate: 0deg;
+
+    z-index: 2;
+    position: absolute; 
+}
+
+/* Arte Tradicional */
+
+.container-trade{
+    width: 90%;
+    height: auto;
+
+    display: flex;
+
+    margin: auto;
+    margin-top: 4%;
+}
+
+.art-trade{
+    width: 49%;
+    height: auto;
+
+    margin: auto;
+}
+
+.art-trade img{
+    width: 100%;
+    height: auto;
+}
+
+/* Pintura em Tela */
+
+.roxo2{
+    width: auto;
+    height: 140%;
+
+    left: 18.5%;
+    rotate: 0deg;
+
+    z-index: 0;
+    position: absolute; 
+}
+
+.borraoroxo2 {
+    width: auto;
+    height: 100%;
+
+    z-index: 1;
+    position: absolute;
+}
+
+.titulo-artes1 {
+    font-family: 'YasFont';
+    font-size: 6.6rem;
+    color: #32088C;
+
+    text-shadow: 0.5rem 0 0 #FEFEFF;
+
+    z-index: 2;
+    position: absolute;
+
+    top: 0rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .branco{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .yas-title{
+        font-size: 2.5rem;
+        left: 0.7rem;
+    }
+
+    header{
+        height: auto;
+        display: block;
+    }
+
+    .menu-but{
+        width: auto;
+        height: auto;
+
+        display: block;
+
+        margin: auto;
+        margin-top: 0rem;
+    }
+
+    .centralizar{
+        display: block;
+    }
+
+    #centralizar{
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .art-model{
+        width: 90%;
+    }
+
+    .container-about{
+        display: block;
+    }
+
+    .about-retails{
+        width: 100%;
+        height: auto;
+    }
+
+    .title-yas{
+        font-size: 5rem;
+    }
+
+    .yas{
+        width: auto;
+        height: 42%;
+
+        top: 0;
+        border-radius: 2rem;
+    }
+
+    .fundo{
+        width: auto;
+        height: 60%;
+        top: -7rem;
+    }
+
+    .text-yas{
+        width: 90%;
+        font-size: 1.5rem;
+
+    }
+
+    .borrin{
+        width: 130%;
+        height: auto;
+
+        top: 3rem;
+    }
+
+    .container-color {
+        width: 100%;
+        height: auto;
+    
+        background-image: linear-gradient(to bottom, #d7b0ff 12%, #f9f3ff 25%);
+        /*background-color: #d7b0ff;*/
+    
+    }
+
+    .borraoroxo{
+        width: auto;
+        height: 40%;
+    }
+
+    .coisa-roxa{
+        width: auto;
+        height: 55%;
+
+        top: -2rem;
+        right: 0.9rem;
+    }
+
+    .coisa-roxa2{
+        width: auto;
+        height: 55%;
+
+        top: 0.2rem;
+        left: 0.9rem;
+    }
+    .brilho{
+        width: auto;
+        height: 32%;
+    }
+
+    .brilho2{
+        width: auto;
+        height: 22%;
+
+        top: 7rem;
+    }
+
+    .titulo-artes{
+        font-size: 3rem;
+
+        text-shadow: 0.25rem 0 0 white;
+    }
+
+    .brilhoroxo{
+        width: auto;
+        height: 70%;
+
+        right: 0.5rem;
+    }
+
+    .titulo-arte{
+        margin-top: 1rem;
+    }
+
+    .borraoroxo2{
+        width: auto;
+        height: 40%;
+    }
+
+    .container-trade{
+        display: block;
+    }
+
+    .art-trade{
+        width: 90%;
+    }
+
+    .galhoroxo{
+        height: 65%;
+
+        left: 1rem;
+    }
+
+    .titulo-artes1{
+        font-size: 3rem;
+
+        top: 2.6rem;
+
+        text-shadow: 0.25rem 0 0 white;
+    }
+
+    .roxo2{
+        height: 73%;
+
+        left: 0;
+        top: 1.75rem;
+    }
+}
